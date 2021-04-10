@@ -1,0 +1,132 @@
+<html>
+<title> First Game </title>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script src=" jquery-3.1.0.min.js "></script>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+</script>
+<style>
+#div1 {
+margin:auto;
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+	background-color:white;
+    border: 1px solid #aaaaaa;
+}
+#masthead {
+    height: 20%;
+    background: #ccc; padding: 15px; 
+}
+#sidebar { 
+    float: left;
+    width: 20%; height: 140%;
+    margin-right: 2%;  
+    background: 		#CD853F; padding: 15px; 
+ }
+#main { 
+    height: 140%;
+    background: #D2B48C; padding: 15px; 
+} 
+#footer  { 
+    clear: left;  
+    height: 3%;
+ background : 	#FFA07A;	
+	padding: 15px; 
+}
+</style>
+</head>
+<body>
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+
+
+
+
+<div  id="main">
+   
+<h3> Games </h3>
+<strong><h3>Drag the image into the correct rectangle:</h3>
+<img id="p1" src="222.png" draggable="true" ondragstart="drag(event)" width="250" height="69" >
+<img id="p2" src="22.png" draggable="true" ondragstart="drag(event)" width="250" height="69" >
+<img id="p3" src="453.png" draggable="true" ondragstart="drag(event)" width="250" height="69" >
+<div name="ODD Numbers" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">ODD Numbers </div><br>
+<div name="BINARY Numbers" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> BINARY Numbers </div><br>
+<div name="EVENT Numbers" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> EVENT Numbers </div><br>
+
+</div>
+
+
+<div  class="footer">
+<center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</body>
+</html>

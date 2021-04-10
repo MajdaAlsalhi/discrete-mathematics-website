@@ -1,0 +1,128 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script src=" jquery-3.1.0.min.js "></script>
+
+<script>
+function m(){
+var x=0;
+//alert("IN");
+if(document.name.n[0].checked==true)
+x++;
+if(document.name.g[3].checked==true)
+x++;
+if(document.name.p[0].checked==true)
+x++;
+
+document.write("the correct answer is <br>1. 1/2<br>2. 1/13 <br>2. 360 <br>3. 1/2");
+alert("Your marks is "+x +"/3");
+if (x == 0) 
+alert("please select some thing");
+else 
+{alert("you have get" + x+"/3");
+return true;
+}
+return false;
+}
+
+</script>
+</head>
+<body>
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+
+
+<div  class="main" style="font-size:15px; text-align:center;" >
+  <img id="img" src = "q2.gif" alt = "mental" >
+
+<form name="name" action="" method="post" onsubmit="return m()">
+<strong>
+<h4>
+<strong>1.A fair die is rolled. Find the probability that the number rolled is even ?
+</h4>   
+
+    <input type="radio" name="n" value="1"required >1/2<br>
+<input type="radio" name="n" value="2"required >1/3<br>
+<input type="radio" name="n" value="3"required >3/4<br>
+<input type="radio" name="n" value="4"required >1/5<br>
+<h4><strong>2.Find the probability that a 6 is obtained on one of the dice in a throw of two dice, given
+that the sum of the digits on the upper face is 7?</h4>                                         
+
+<input type="radio" name="g" value="1"required >6/10<br>
+<input type="radio" name="g" value="2" required>2/13<br>
+<input type="radio" name="g" value="3"required >6/10<br>
+<input type="radio" name="g" value="4"required >6/13<br>
+<h4><strong>3.5. Two Fair dice are rolled. Find the odds in favour of rolling the numbers such that the
+sum of the numbers rolled is 7 or both of the numbers rolled are the same?
+</h4>                                         
+
+<input type="radio" name="p" value="1"required >1/2<br>
+<input type="radio" name="p" value="2"required >1/4<br>
+<input type="radio" name="p" value="3"required >3/4<br>
+<input type="radio" name="p" value="4"required >25/50<br><br>
+                                        
+
+
+
+<input type="submit" ><br>
+</form > 
+</div>
+<br><br>
+<div  class="footer">
+<center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</body>
+</html>

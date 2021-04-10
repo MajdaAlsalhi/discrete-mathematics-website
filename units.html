@@ -1,0 +1,164 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script type="text/javascript">
+
+        function Resize()
+        {  var i = document.getElementById("img2");
+            i.style.fontSize = "40px"; 
+        
+
+        }
+		 function smsize()
+        {  var i = document.getElementById("img2");
+          i.style.fontSize = "15px"; 
+        }
+		 function pink()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "pink";
+        }
+		function green()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightgreen";
+        }
+		function purple()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightblue";
+        }
+
+<!--
+
+if(document.images){
+var image1 = new Image(); // Preload an image
+image1.src = "images44.jpg";
+var image2 = new Image(); // Preload second image
+image2.src = "666.jpg"; } //--> </script>
+</head>
+<style>
+h3{text-align:center;
+font-size:30px;
+color:#2F4F4F;}
+</style>
+<body>
+
+
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+
+
+<div id="j" class="main">
+	  <strong>
+   <strong><center>
+<button type="button" onclick="Resize()"style="font-size:30px">A</button>
+<button type="button" onclick="smsize()"style="font-size:19px">A</button>
+<button type="button" onclick="pink()"style="font-size:19px;background-color:pink;">pink</button>
+<button type="button" onclick="purple()"style="font-size:19px ;background-color:lightblue;">blue</button>
+<button type="button" onclick="green()"style="font-size:19px;background-color:lightgreen;">green</button>
+ </strong></center>
+<h3>Lecture 1 :Congruence 1 </h3>
+<a href="images44.jpg" onMouseOver="document.myImage.src=image2.src;"
+onMouseOut="document.myImage.src=image1.src">
+<img id="img1" name="myImage" src="666.jpg" />
+</a>
+<p  id="img2" class="content" style="font-size:15px"> <span class="firstcharacter"> D</span>
+         efinition:<br>
+           Let   and   be two integers and   be a positive integer. Then 
+		   is said to be congruent to   modulo   if   and   have the same remainder when   
+		   divides both   and  . 
+            If   is congruent to   modulo  , we write,  
+            If   is not congruent to   modulo m, then we write,  a≢b(modm)<br>
+			<mark><strong>Example: 1<br></mark>
+Let     <br>
+          
+          
+Then<br>
+         19 = 3.5 + 4<br>
+         24 = 4.5 + 4<br>
+Also,<br>
+        19   4 (mod 5)<br>
+        24   4 (mod 5)<br>
+        Also 24 ≡19 (mod 5)<br>
+        Also 19 ≡24 (mod 5)<br>
+Since 19 ≡4 (mod 5) => 19 – 24 => -5 => (-1)5 (mod 5)<br>
+Also, 19 – 24 ≡ -5 ≠ 6k => 19 ≡ 24 (mod 6)<br>
+Also, 19 – 23 = -4 ≠ 5k => 19≢23(mod 5)<br>
+
+<strong><mark>Example: 2</mark><br>
+5 divides 17 – 2<br>
+17 ≡ 2 (mod 5)<br>
+5 does not divide 11 – 3<br>
+11 ≢ 3 (mod 5)<br>
+<strong><mark>Example: 3</mark><br>
+Let m = 7, consider the integer 38.<br>
+38 = 5.7 + 3<br>
+38 – 3 = 5.7<br>
+38 ≡3(mod7)<br>
+7 divides 38 – 3<br>
+∴ 3 is the remainder when 38 is divided by 7.<br>
+
+			
+
+</p>
+
+
+
+</div>
+<div  class="footer">
+    <center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script src=" jquery-3.1.0.min.js "></script>
+
+</head>
+
+<body>
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+<div  class="main">
+ <img id="img" src="shape.gif" width="99px" height="99px"><br>
+ <p  id="img2"  style="font-size:17px">
+ <center>
+ <h3>Game</h3>
+ <h3>Click on any button to draw any shape:</h3>
+<canvas id="cn" width="300px" height="300px" style="border:10px double red">
+</canvas><br><br>
+<button onclick="a()">click here to drow rectangle</button>
+<button onclick="b()">click here to drow circle</button>
+<button onclick="c()">click here to insert image</button><br><br>
+
+<script>
+function a(){
+var x=document.getElementById("cn");
+var y=x.getContext("2d");
+y.fillStyle="green";
+y.fillRect(10,10,20,20);
+
+}
+function b(){
+var x=document.getElementById("cn");
+var y=x.getContext("2d");
+y.beginPath();
+y.arc(180,110,90,0,2*Math.PI)
+y.stroke();
+}
+function c(){
+var x=document.getElementById("cn");
+var y=x.getContext("2d");
+var im=document.getElementById("img");
+y.drawImage(im,10,80);
+}
+function d(){
+var x=document.getElementById("cn");
+var y=x.getContext("2d");
+y.deleatAll();
+}
+
+</script>
+</center>
+</body>
+<div  class="footer">
+    <center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</html>

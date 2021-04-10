@@ -1,0 +1,203 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script type="text/javascript">
+
+  function Resize()
+        {  var i = document.getElementById("img2");
+            i.style.fontSize = "40px"; 
+        
+
+        }
+		 function smsize()
+        {  var i = document.getElementById("img2");
+          i.style.fontSize = "15px"; 
+        }
+		 function pink()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "pink";
+        }
+		function green()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightgreen";
+        }
+		function purple()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightblue";
+        }
+		
+<!--
+
+if(document.images){
+var image1 = new Image(); // Preload an image
+image1.src = "mental.jpg";
+var image2 = new Image(); // Preload second image
+image2.src = "home2.png"; } //--> </script>
+</head>
+<style>
+h3{text-align:center;
+font-size:30px;
+color:#2F4F4F;}
+</style>
+<body>
+
+
+
+
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+
+
+<div   id="j" class="main">
+ <strong>
+   <strong><center>
+<button type="button" onclick="Resize()"style="font-size:30px">A</button>
+<button type="button" onclick="smsize()"style="font-size:19px">A</button>
+<button type="button" onclick="pink()"style="font-size:19px;background-color:pink;">pink</button>
+<button type="button" onclick="purple()"style="font-size:19px ;background-color:lightblue;">blue</button>
+<button type="button" onclick="green()"style="font-size:19px;background-color:lightgreen;">green</button>
+ </strong></center>
+<h3>Lecrure 2 : Congruence 1</h3>
+
+<p  id="img2" class="content" style="font-size:12px" > <span class="firstcharacter"> M</span>
+    <strong> odular (residue) representation of integers <br>
+Let m_1,m_2,…m_(k-1),m_k be pairwise relatively prime integers greater than or equal to 2. Let   m=m_1 m_2…m_(k-1) m_k. If  a_1,a_2,…a_k are positive integers such that 0<a<m, 0≤a_i<m_i and <br>
+a≡a_1  (mod m_1)<br>
+a≡a_2  (mod m_2)<br>
+…..<br>
+a≡a_k  (mod m_k)<br>
+Then by the Chinese remainder theorem, it follows that a is the unique integer <m such that a satisfies the above system of congruences. <br>
+
+
+If  0<b<m  and b is a solution x≡a_1  (mod m_1)<br>
+x≡a_2  (mod m_2)<br>
+…..
+x≡a_k  (mod m_k)<br>
+Then by the Chinese remainder theorem, b≡a(mod m) 	<br>
+Because 0<b<m, 0<a<m, it follows that b = a.<br>
+The k – tuple<br>
+(a_1,a_2,…a_k )=(x mod m_1,x mod m_2,..x mod m_k) is called the modular (or residue) representation of the integer a with respect to m_1,m_2,…m_(k-1),m_k<br>
+	 a<=>(a mod m_1,a mod m_2,…a mod m_k)<br>
+<mark>Example:<br></mark>
+Let m_1=2<br>
+m_2=3 <br>
+m_3=5 	<br>
+Then m=2.3.5=30<br>
+Let a=25 .<br>
+Now<br>
+25≡1 (mod 2)<br> 
+25≡1 (mod 3) <br>
+25≡0 (mod 5) <br>
+Hence the 3 – tuples (25 (mod 2), 25 (mod 3), 25 (mod 5)) = (1, 1, 0) is the modular representation of 25 with respect to the module 2, 3, 5 respectively.<br>
+
+<mark>Example:<br></mark>
+Suppose that we have modular representation of an integer 0<a<105<br>
+as follows:<br>
+a<=>(a mod 3,a mod 5,a mod 7)<br>
+a=(2,1,5)<br>
+Then a is the solution of the system of congruence <br>
+x≡2 (mod 3)<br>
+x≡1 (mod 5)<br>
+x≡5 (mod 7)<br>
+Then by the Chinese remainder theorem we get a=26<br>
+
+
+
+
+</p>
+<center>
+<div id="div" class="w3-content w3-section" style="max-width:600px">
+  <img class="mySlides" src="m.jpg" width="200" height="90">
+  <img class="mySlides" src="1111.jpg" width="200" height="90">
+  <img class="mySlides" src="44.jpg" width="200" height="90">
+  <img class="mySlides" src="99.jpg" width="200" height="90">
+</div>
+</center>
+</div>
+
+
+</div>
+
+
+<script src=" jquery-3.1.0.min.js "></script>
+<script>
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div  class="footer">
+    <center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</body>
+</html>

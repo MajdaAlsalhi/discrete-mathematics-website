@@ -1,0 +1,152 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script type="text/javascript">
+  function Resize()
+        {  var i = document.getElementById("img2");
+            i.style.fontSize = "40px"; 
+        
+
+        }
+		 function smsize()
+        {  var i = document.getElementById("img2");
+          i.style.fontSize = "15px"; 
+        }
+		 function pink()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "pink";
+        }
+		function green()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightgreen";
+        }
+		function purple()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightblue";
+        }
+		
+  
+
+ </script>
+</head>
+<style>
+h3{text-align:center;
+font-size:30px;
+color:#2F4F4F;}
+</style>
+<body>
+
+
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+
+
+<div   id="j" class="main">
+ <strong>
+   <strong><center>
+<button type="button" onclick="Resize()"style="font-size:30px">A</button>
+<button type="button" onclick="smsize()"style="font-size:19px">A</button>
+<button type="button" onclick="pink()"style="font-size:19px;background-color:pink;">pink</button>
+<button type="button" onclick="purple()"style="font-size:19px ;background-color:lightblue;">blue</button>
+<button type="button" onclick="green()"style="font-size:19px;background-color:lightgreen;">green</button>
+ </strong></center>
+<h3>Lecture 3 : Counting1 </h3>
+<p> If you wont to understand more please watch this video: </p>
+<div id="flip">Click to slide up/down the video </div>
+<div id="panel"><video  width="200" controls>
+
+
+  <source src="mm.mp4" type="video/mp4">
+  
+</video></div>
+
+<script src=" jquery-3.1.0.min.js "></script>
+<script>
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<p  id="img2" class="content" style="font-size:18px" > <span class="firstcharacter"> C</span>
+      <strong>   ounting is the most fundamental part of mathematics.   Indeed, in some ways, it comes before mathematics begins.  But counting is also an important part of computer science:
+
+
+•  When  we  are  dealing  with  programs  that manipulate large amounts of data, we sometimes need to count carefully how much data might actually be present, and how much space this will require.  The answers to these questions might affect what type of data structure we use (for instance, forcing us to choose one that may not be as efficient from a time standpoint, but is more efficient from a space standpoint.)
+
+
+•  When we are trying to estimate the cost of running an algorithm,  we frequently need to count,	or  estimate,  how  many  instructions might be executed in a worst case scenario.
+
+
+
+Both these themes concern computational complexity, part of the theory of computer science – but it’s important to remember that they are more than purely theoretical issues.
+<strong><mark>Example:</mark><br>
+|{1, 2, 3} ∪ {11, 12, 13, 14}|	=	3 + 4 = 7<br>
+|{1, 3, 5, 7, 9} ∪ {2, 4, 6, 8}|	=	5 + 4 = 9.<br>
+
+
+</p>
+
+
+
+</div>
+<div  class="footer">
+    <center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script type="text/javascript">
+
+      function Resize()
+        {  var i = document.getElementById("img2");
+            i.style.fontSize = "40px"; 
+        
+
+        }
+		 function smsize()
+        {  var i = document.getElementById("img2");
+          i.style.fontSize = "15px"; 
+        }
+		 function pink()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "pink";
+        }
+		function green()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightgreen";
+        }
+		function purple()
+        {  var i = document.getElementById("j");
+			i.style.backgroundColor = "lightblue";
+        }
+		
+
+<!--
+
+if(document.images){
+var image1 = new Image(); // Preload an image
+image1.src = "222.png";
+var image2 = new Image(); // Preload second image
+image2.src = "22.png"; } //--> </script>
+</head>
+<style>
+h3{text-align:center;
+font-size:30px;
+color:#2F4F4F;}
+</style>
+<body>
+
+
+
+
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+	   
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+
+
+<div  id="j" class="main">
+  <strong>
+   <strong><center>
+<button type="button" onclick="Resize()"style="font-size:30px">A</button>
+<button type="button" onclick="smsize()"style="font-size:19px">A</button>
+<button type="button" onclick="pink()"style="font-size:19px;background-color:pink;">pink</button>
+<button type="button" onclick="purple()"style="font-size:19px ;background-color:lightblue;">blue</button>
+<button type="button" onclick="green()"style="font-size:19px;background-color:lightgreen;">green</button>
+ </strong></center>
+<h3>Lecture 4 : Four Fundamental Counting Problems </h3>
+<a href="22.png" onMouseOver="document.myImage.src=image2.src;"
+onMouseOut="document.myImage.src=image1.src">
+<img id="img1" name="myImage" src="222.png" />
+</a>
+<p  id="img2" class="content" style="font-size:15px" > <span class="firstcharacter">In</span><strong>
+       troduction The addition and multiplication principles, along with a certain amount of cleverness,  will allow you to solve almost every counting problem from scratch.    But,  it’s  useful  to have a few  “basic recipes” in order to handle certain situations that arise over and over again.
+
+
+In this lecture, four such recipes are introduced. They  all  deal  with  the  fundamental  problem of constructing collections of a certain size of elements from a given base set – but with two directions of variation:
+
+
+
+• Are we concerned with the order in which the elements occur?
+
+
+
+• Is repetition of elements allowed?
+
+
+
+The four types of collections thus formed are:
+sequences, permutations, subsets and multisets. 
+
+The framework
+
+
+We will work throughout with a fixed set A  of n elements.   From A we will be constructing collections of a fixed size, k.   We may or may not care about the order in which the resulting elements are chosen, and we may or may not allow repeated elements.   That gives us four different situations to consider, summarized in the 
+<br><mark>Example:<br> </mark> The 3-sequences from {0, 1, 2, . . . , 9}
+correspond naturally to the numbers from 0 to
+999, written with leading 0’s if necessary to make them 3 digits long (for instance we write 045 rather than 45). So, it’s no surprise that there are 1000 =
+103 of them.
+</p>
+
+
+
+</div>
+<div  class="footer">
+    <center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</body>
+</html>

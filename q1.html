@@ -1,0 +1,130 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script src=" jquery-3.1.0.min.js "></script>
+
+<script>
+function m(){
+var x=0;
+//alert("IN");
+if(document.name.n[0].checked==true)
+x++;
+if(document.name.g[2].checked==true)
+x++;
+if(document.name.p[2].checked==true)
+x++;
+document.write("the correct answer is <br>1. 1 mod 4<br>2. 1 mod 11 <br>3. 206 mod 210");
+alert("Your marks is "+x +"/3");
+if (x == 0) 
+alert("please select some thing");
+else 
+{alert("you have get" + x+"/3");
+return true;
+}
+return false;
+
+}
+
+
+
+
+</script>
+</head>
+<body>
+<div  class="masthead">
+       <h1> Discrete Mathematics </h1>
+</div>
+
+
+<ul class="dropdown">
+<a  class="dropbtn" href="index.html">Home</a>
+<div class="dropdown-content">
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="units.html">chapteres</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="units.html">Congruence 1</a>
+<a href="unit2.html">Congruence 2</a>
+<a href="unit3.html">Counting1</a>
+<a href="unit4.html">Four Fundamental Counting Problems </a>
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="q1.html">Quizzes</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="q1.html">Quiz for unit 1 and 2</a>
+<a href="q2.html">Quiz for unit 3</a>
+<a href="q3.html">Quiz for unit 4</a>
+
+
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="Game1.html">Games</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="Game1.html">Game 1</a>
+<a href="Game2.html">Game 2</a>
+<a href="Game3.html">Game 3</a>
+<a href="Game4.html">Game 4</a>
+<a href="Game5.html">Game 5</a>
+</div>
+</ul>
+<ul class="dropdown">
+<a  class="dropbtn" href="contact.html">Contact</a>
+<i class="fa fa-caret-down"></i>
+<div class="dropdown-content">
+<a href="contact.html">contact</a>
+<a href="form.html">The Form</a>
+<a href=".html">More Information</a>
+</div>
+</ul>
+
+
+
+<div  class="main"style="font-size:17px; text-align:center;">
+  <img id="img" src = "q2.gif" alt = "mental" >
+
+<form name="name" action="" method="post" onsubmit="return m()">
+</center>
+
+<h4>1.What is the remainder when   is divided by 4 ?</h4>
+                                      
+<strong>
+<input type="radio" name="n" value="1" required >1 mod 4<br>
+<input type="radio" name="n" value="2"required >12 mod 4<br>
+<input type="radio" name="n" value="3"required >30 mod 4<br>
+<input type="radio" name="n" value="4" required>55 mod 2<br>
+
+<h4>2.What is the remainder when is divided by  11 ?</h4>                                     
+<input type="radio" name="g" value="1"required >2 mod 11<br>
+<input type="radio" name="g" value="2"required >5 mod 11<br>
+<input type="radio" name="g" value="3"required >1 mod 11<br>
+<input type="radio" name="g" value="4"required >11 mod 11<br>
+
+<h4>3.Solve the system of congruences:x=1(mod 5),x=2(mod 6),x=3(mod 7)</h4>
+                         
+<input type="radio" name="p" value="1" required>100 mod 200<br>
+<input type="radio" name="p" value="2" required >206 mod 300<br>
+<input type="radio" name="p" value="3" required >206 mod 210<br>
+<input type="radio" name="p" value="4" required >11 mod 11<br>
+
+
+<input type="submit" ><br>
+</form >
+
+
+</div>
+<br><br>
+<div  class="footer">
+<center>
+   ©copyright |MAJDA Alsalhi|
+ </div>
+</body>
+</html>
